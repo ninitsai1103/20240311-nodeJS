@@ -1,10 +1,10 @@
-import epress from "express";
+import express from "express";
 import {resolve} from "path";
 import jsonData from "./singers.json" assert {type: "json"};
 const { singers } = jsonData;
 console.log(singers);
 
-const app = epress();
+const app = express();
 
 app.get("/", (req, res) => {
     res.send("網頁首頁");
@@ -39,7 +39,7 @@ app.get("/singers/:id.html", (req, res) => {
         // res.set("Ni", "Server");
         // res.send("<h1>找不到頁面</h1>")
 
-        集中寫一行
+        // 集中寫一行
         res.status(404).set("Ben", "Server").send("<h1>找不到頁面</h1>")
     }
 });

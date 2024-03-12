@@ -1,6 +1,6 @@
-import epress from "express";
+import express from "express";
 
-const app = epress();
+const app = express();
 
 app.get("/", (req, res) => {
     res.send("網頁首頁");

@@ -1,11 +1,11 @@
-import epress from "express";
+import express from "express";
 
 const fakeData = {
     "CvZP-PIguWG": "《浅草で一番おすすめしたい抹茶クレープ(The most recommended matcha crepe in Asakusa)》",
     "CvRz0e3Awmi": "《ぷるんぷるんすぎるマシュマロアイス(Too plump marshmallow ice cream in Japan)》"
 }
 
-const app = epress();
+const app = express();
 
 app.get("/", (req, res) => {
     res.send("網頁首頁");

@@ -1,9 +1,9 @@
-import epress from "express";
+import express from "express";
 import jsonData from "./singers.json" assert {type: "json"};
 const { singers } = jsonData;
 console.log(singers);
 
-const app = epress();
+const app = express();
 
 app.get("/", (req, res) => {
     res.send("網頁首頁");
